@@ -4,6 +4,9 @@
 		"ms-vscode.csharp"
 	],
 
+	// Uncomment the next line to fix the issue
+	// "workspaceFolder": "/workspace",
+
 	"dockerComposeFile": ["docker-compose.yaml"],
 	"service": "api"
 

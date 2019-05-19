@@ -1,10 +1,12 @@
 {
 	"name": "C# (.NET Core 2.1)",
-	"dockerFile": "Dockerfile",
 	"extensions": [
 		"ms-vscode.csharp"
 	],
-	
+
+	"dockerComposeFile": ["docker-compose.yaml"],
+	"service": "api"
+
 	// Uncomment the next line if you want to publish any ports.
 	// "appPort": [],
 

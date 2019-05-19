@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # Update this to wherever you want VS Code to mount the folder of your project
+      - ..:/workspace
+    ports:
+     - "5000:80"
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity 
